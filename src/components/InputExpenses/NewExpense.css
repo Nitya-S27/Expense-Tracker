@@ -17,7 +17,7 @@
   background-color: #40005d;
   color: white;
   border-radius: 12px;
-  margin: 6rem auto auto 16rem;
+  /* margin: 6rem auto auto 16rem; */
 }
 
 .new-expense button:hover,
@@ -35,4 +35,7 @@
 .new-expense button.alternative:hover,
 .new-expense button.alternative:active {
   background-color: #ddb3f8;
+}
+.button-lite {
+  margin: auto !important;
 }

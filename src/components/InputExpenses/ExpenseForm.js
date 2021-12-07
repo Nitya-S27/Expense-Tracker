@@ -31,6 +31,9 @@ const ExpenseForm = (props) => {
     setDate("");
   };
 
+  const buttonClick = () => {
+    props.buttonClickHandler(false);
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div className="new-expense__controls">
@@ -58,9 +61,10 @@ const ExpenseForm = (props) => {
             onChange={dateChangeHandler}
           />
         </div>
-        <div className="new-expense__actions">
-          <button type="submit">Add Expense</button>
-        </div>
+        <button onClick={buttonClick} type="button">
+          Cancel
+        </button>
+        <button type="submit">Add Expense</button>
       </div>
     </form>
   );
