@@ -12,9 +12,6 @@ const App = () => {
       return [expense_data, ...prevExp];
     });
   };
-  // const handleFilteredExpenses = (chosenYear) => {
-  //   return exp.filter((exenses) => expenses.date.getFuchosenYear);
-  // };
 
   return (
     <div>

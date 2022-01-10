@@ -13,11 +13,7 @@ const NewExpense = (props) => {
     props.onAddingExpense(expenseData);
   };
   const showFormHandler = (initialState) => {
-    if (initialState === false) {
-      setFormVisible(false);
-    } else {
-      setFormVisible(true);
-    }
+    setFormVisible(initialState);
   };
 
   return (
